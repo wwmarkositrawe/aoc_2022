@@ -1,4 +1,5 @@
 from itertools import groupby
+import heapq
 
 
 input_data = open("Day1\data.txt").read().rstrip().split("\n")
@@ -27,9 +28,12 @@ def max_val(lst):
 
 result = max_val(summed_vals)
 
+top_3_added = sum(heapq.nlargest(3, summed_vals))
+
 
 def main(): 
     print(result)
+    print(top_3_added)
     
     
 if __name__ == "__main__":    
