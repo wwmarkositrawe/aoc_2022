@@ -14,11 +14,11 @@ scissors = 3
 
 for elem in li:
     if elem == 'AX':
-        result += rock + isDraw
-    elif elem == 'AY':
-        result += paper + isWinner
-    elif elem == 'AZ':
         result += scissors + isLost
+    elif elem == 'AY':
+        result += rock + isDraw
+    elif elem == 'AZ':
+        result += paper + isWinner
     elif elem == 'BX':
         result += rock + isLost
     elif elem == 'BY':
@@ -26,11 +26,11 @@ for elem in li:
     elif elem == 'BZ':
         result += scissors + isWinner
     elif elem == 'CX':
-        result += rock + isWinner
-    elif elem == 'CY':
         result += paper + isLost
-    elif elem == 'CZ':
+    elif elem == 'CY':
         result += scissors + isDraw
+    elif elem == 'CZ':
+        result += rock + isWinner
         
 print(result)
 
